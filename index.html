@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- bootstrap !-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+    
+    <!-- custom style for website !-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <div class="blog-masthead">
+      <h1>LitCoin <br>Yu Qi Wu, Augie Murphy, Ray Jones, and Angelica Zverovich</h1>
+      
+      <!-- navbar !-->
+      <nav class="nav navbar-toggleable-md nav-lt">
+	<a class="nav-link active" href="litcoin.html">Home</a>
+	<a class="nav-link" href="info.html">Trading</a>
+	<a class="nav-link" href="credits.html">Credits</a>
+      </nav>
+      
+    </div>
+    
+  </head>
+    
+  <body>
+    <div>
+    <h2> What is Bitcoin? </h2>
+    <ul>
+      <li> Bitcoin was the first decentralized cryptocurrency! </li>
+      <li> Satoshi Nakamoto invented it, but who is that guy? </li>
+      <ul>
+	<li> claimed to be a man living in Japan, born April 5, 1975 </li>
+      </ul>
+      <li>Digital Currency; no government needs to issue it and no banks need to manage accounts and verify transaction </li>
+      <li> Instead, bitcoins exist as records on a distributed ledger called the block chain </li>
+      <li> Copies of the blockchain are shared by a volunteer network of connected computers. </li>
+      <li> "Owning" bitcoin means having the ability to transfer control of it to someone else by creating a record of the transfer in the block chain. </li>
+      <li> Access to the block chain is granted by an  Elliptic Curve Digital Signature Algorithm (ECDSA) private and public key pair. </li>
+    </ul>
+    </div>
+
+    <div>
+    <h2> Why Do BitCoins Have Value? </h2>
+    <ul>
+      <li> Bitcoins have value because they are useful as a form of money. </li>
+      <li> Bitcoins have the characteristics of money (durability, portability, fungibility, scarcity, divisibility, and recognizability) but don't rely on physical properties (like gold and silver) or trust in central authorities </li>
+      <li> Backed by mathematics: ECDSA </li>
+      <li> But like with all currency, the value of bitcoin comes only and directly from people willing to accept them as payment. </li>
+    </ul>
+    </div>
+
+    <div>
+    <h2> Ledger </h2>
+    <ul>
+      <li> First, we start with something easy. </li>
+      <li> As a small group of people, they want to have a public ledger that records all the transaction between them </li>
+      <li> Then at the end of the month, people can calculate who owes who how much. </li>
+      <li> This will make life easier because now you don't need to pay each other multiple times but just once per month </li>
+      <li> Since it's a public ledger, anyone can add a line to it. </li>
+      <li> This creates the first rule:"Anyone can add lines to the Ledger" </li>
+      <li> For example:"A gives $100 to B." But what if B never approved the transaction? </li>
+      <li> Therefore we need a digital signatures next to the line to confirm that B has seen and approved it. </li>
+    </ul>
+    <img src="SettleUp.png" >
+    </div>
+
+    <div>
+    <h2> Digital Signature </h2>
+    <ul>
+      <li> Everyone has the same public key and different private (secret) key. </li>
+      <li> Everytime you sign a digital signature, it's like using a math function </li>
+      <ul>
+	<li> Sign( message, secret key) = a specific digital signature for this line in the ledger </li>
+	<li> The digital signature is some 256 bit signature </li>
+      </ul>
+      <img src="sk.png">
+      <li> Then to verify </li>
+      <ul>
+	<li> Verify( message, digital signature, public key) = True/False </li>
+	<li> Everyone can verify it with the public key </li>
+	<li> But there is 2^256 different signatures for this line, so it is almost impossible for people just to guess and check it </li>
+      </ul>
+      <img src="verify.png">
+      <h3> IMPOSSIBLE TO FORGE </h3>
+    </ul>
+    <img src="impossible.png">
+
+    <h2> Copy and Paste </h2>
+    <ul>
+      <li> Go back to the previous example, A gives $100 to B. Can't A just copy and paste the line again and again? Because the message and signature match. </li>
+      <li> So every line has a unique ID which will also be part of the message. Then A cannot do the Copy and Paste </li>
+      <li> Thus we can have a rule "Only signed transactions are valid" </li>
+    </ul>
+    <img src="new.png">
+
+    <h2> Runaway </h2>
+    <ul>
+      <li> What if A claims he pay other people tons of money and run away at the end of the month? </li>
+      <li> So we add a new rule, "No overspending" </li>
+      <li> Everyone has to turn in real cash before they can spend money from others </li>
+    </ul>
+    <img src="protocol.png">
+    </div>
+
+    
+  </body>
+</html>
