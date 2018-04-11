@@ -1,0 +1,57 @@
+a {
+    text: 10px Times;
+    color: black;
+	font-weight:bold;
+}
+
+.blog-masthead{
+    padding: 0px;
+    background-color:#005960;
+}
+
+body {
+    background-color:#eceeef;
+    height: 100%;
+}
+
+.container-fluid {
+    background-color:#CAE4DB; 
+    color:#465C8B;
+    padding:25px;
+    font: 25px Courier;
+    text-align: left;
+}
+
+div{
+    padding: 25px;
+
+}
+
+h1 {
+    padding: 25px;
+    font: 40px Georgia;
+    color: #F3D6E4;
+}
+
+h2{
+    font: 30px Courier;
+    color: #223A5E;
+}
+
+head {
+}
+
+html{
+    height:100%;
+}
+
+.jumbotron{
+    background-color:AliceBlue;
+    text-align:center;
+    padding:15px;
+}
+
+.nav-lt {
+    background-color:seashell;
+    color:DarkSlateGrey;
+}
